@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+@import "color.scss";
+
+form {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 20px auto;
+	padding: 20px;
+  
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #cccccc;
+}
+
+p {
+	font-family: 'Rubik', sans-serif;
+	color: $text;
+}
+
+.form_wraper {
+	width: 30%;
+	padding: 5px;
+	margin: 5px;
+	background-color: #ffffff;
+	box-shadow: 0 0 10px #cccccc;
+	border-radius: 5px;
+}
+
+.application_status {
+	display: flex;
+	justify-content: space-around;
+}
+
+input {
+	border-radius: 5px;
+	border: 1px solid #cccccc;
+	width: 95%;
+	padding: 5px;
+	margin: 5px;
+	font-family: 'Rubik', sans-serif;
+	color: $text;
+}
+
+
+
+.container_calendar {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.half_width {
+	padding: 5px;
+	width: 45%;
+}
+
+input[type="date"] {
+	margin: 0;
+	padding: 0;
+}
+
+.change_date {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+// Кнопки
+.btn_container {
+	margin: 20px auto;
+}
+
+.btn {
+	padding: 6px 12px;
+	margin: 5px;
+	cursor: pointer;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.btn-submit {
+	background: green;
+}
+
+.btn-reset {
+	background-color: rgb(34, 13, 221);
+}
+

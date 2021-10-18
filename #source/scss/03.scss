@@ -1,0 +1,104 @@
+@import "color.scss";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+h1 {
+	font-size: 34px;
+	font-weight: 700;
+	font-family: 'Rubik', sans-serif;
+	color: $text;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: 700;
+	font-family: 'Rubik', sans-serif;
+	color: $text;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+	font-family: 'Rubik', sans-serif;
+	font-size: 14px;
+	color: $text;
+}
+
+.wrapper {
+	max-width: 1296px;
+	margin: 0 auto;
+}
+
+.gallery {
+	display: grid;
+	gap: 24px;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-bottom: 60px;
+}
+
+.gallery-item {
+	display: flex;
+	margin-bottom: 24px;
+}
+
+.gallery-item img {
+	width: 196px;
+	height: 196px;
+	margin-right: 24px;
+}
+
+.btn-show-all {
+	float: right;
+	background-color: $light_green;
+	justify-content: center;
+	align-items: center;
+	padding: 12px 24px;
+	border-radius: 3px;
+	border: 0 solid;
+	cursor: pointer;
+}
+
+// Media
+@media (max-width: 1200px) {
+	.wrapper {
+		max-width: 1150px;
+		margin: 0 10px;
+	}
+	.gallery {
+		grid-template-columns: 1fr 1fr;
+		margin-bottom: 60px;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.gallery {
+		grid-template-columns: 1fr;
+		gap: 24px;
+	}
+}
+@media (max-width: 576px) {
+	.wrapper {
+		max-width: 560px;
+		margin: 0 10px;
+	}
+	.gallery {
+		grid-template-columns: 1fr;
+		gap: 12px;
+		margin-bottom: 0px;
+	}
+	.gallery-item {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 0px;
+	}
+	.gallery-item img {
+		margin: 0 auto 12px;
+	}
+	.gallery-item p {
+		text-align: justify;
+	}
+	.btn-show-all {
+		float: left;
+		margin: 12px auto;
+	}
+}
